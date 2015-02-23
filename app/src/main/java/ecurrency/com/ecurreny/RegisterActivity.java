@@ -93,7 +93,7 @@ public class RegisterActivity extends ActionBarActivity {
         {
             editor = sharedPreferences.edit();
             editor.putString("isLoggedIn" , "true");
-            editor.putString("phome" , phone);
+            editor.putString("phone" , phone);
             editor.commit();
             startActivity(new Intent(context , WelcomeActivity.class));
             MainActivity.login.finish();

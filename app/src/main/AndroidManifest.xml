@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ecurrency.com.ecurreny" >
 
-
     <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- Network State Permissions -->
@@ -29,6 +28,14 @@
         <activity
             android:name=".WelcomeActivity"
             android:label="@string/title_activity_welcome" >
+        </activity>
+        <activity
+            android:name=".PaymentActivity"
+            android:label="@string/title_activity_payment" >
+        </activity>
+        <activity
+            android:name=".ProcessTransaction"
+            android:label="@string/title_activity_process_transaction" >
         </activity>
     </application>
 
