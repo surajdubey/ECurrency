@@ -1,5 +1,6 @@
 package ecurrency.com.ecurreny;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -10,6 +11,10 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,39 +22,91 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.w3c.dom.Text;
 
+import java.util.ArrayList;
+
 
 public class ReceiveActivity extends ActionBarActivity {
 
     TextView tvInfo;
     Context context = this;
     String phone;
+    ListView lvReceive;
+    ArrayList<String> items;
+
+    public static Activity receive;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_receive);
 
+        receive = this;
+
+        lvReceive = (ListView) findViewById(R.id.lvReceive);
         tvInfo = (TextView) findViewById(R.id.tvInfo);
         phone = getSharedPreferences("ECurrency", Context.MODE_PRIVATE).getString("phone", "0");
         new GetAmountAsync().execute(new ApiConnector());
     }
 
 
-    private void checkResult(JSONArray result)
+    private void checkResult(final JSONArray jsonArray)
     {
         //tvInfo.setText(result.toString());
 
-        try {
-            if(result.length()>0)
-            {
-                tvInfo.setText(result.toString());
-            } else {
-                Toast.makeText(context, "No money available to be received.", Toast.LENGTH_LONG).show();
-            }
-        }
-        catch(Exception e)
+        JSONObject jobject = new JSONObject();
+
+        if(jsonArray.length()==0)
         {
-            e.printStackTrace();
+            AlertDialog alertDialog = new AlertDialog.Builder(this).create();
+            alertDialog.setCancelable(false);
+            alertDialog.setTitle("Nothing to receive");
+            alertDialog.setMessage("No money available to receive");
+            alertDialog.setButton("OK" , new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+
+                    dialog.dismiss();
+                    finish();
+
+                }
+            });
+            alertDialog.show();
+        }
+
+        else {
+            try
+            {
+                items = new ArrayList<String>();
+                for(int i=0;i<jsonArray.length();i++)
+                {
+                    jobject = jsonArray.getJSONObject(i);
+                    items.add("Rs. "+jobject.getString("amount")+" from "+"Trans ID : "+jobject.getString("sender_id"));
+
+                }
+                ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
+                lvReceive.setAdapter(arrayAdapter);
+
+                lvReceive.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                        try {
+
+                            Intent intent = new Intent(getApplicationContext(), AcceptMoneyActivity.class);
+                            intent.putExtra("t_id", jsonArray.getJSONObject(position).getString("t_id"));
+                            startActivity(intent);
+                        }
+                        catch(Exception e)
+                        {
+
+                        }
+                    }
+                });
+
+            }
+            catch(Exception e)
+            {
+                e.printStackTrace();
+            }
         }
 
     }
@@ -79,6 +136,14 @@ public class ReceiveActivity extends ActionBarActivity {
             pd.dismiss();
             checkResult(result);
         }
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+
+        finish();
+        startActivity(getIntent());
     }
 
     @Override

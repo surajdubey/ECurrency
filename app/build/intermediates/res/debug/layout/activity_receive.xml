@@ -9,7 +9,14 @@
     <TextView
         android:id="@+id/tvInfo"
         android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+    <ListView
+        android:id="@+id/lvReceive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
 
 </RelativeLayout>
 <!-- From: file:/home/suraj/AndroidStudioProjects/ECurreny/app/src/main/res/layout/activity_receive.xml -->

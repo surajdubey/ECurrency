@@ -47,6 +47,10 @@
             android:name="ecurrency.com.ecurreny.ReceiveActivity"
             android:label="@string/title_activity_receive" >
         </activity>
+        <activity
+            android:name="ecurrency.com.ecurreny.AcceptMoneyActivity"
+            android:label="@string/title_activity_accept_money" >
+        </activity>
     </application>
 
 </manifest>

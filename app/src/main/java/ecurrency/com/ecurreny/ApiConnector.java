@@ -31,7 +31,7 @@ public class ApiConnector {
     public String registerUser(String name, String phone, String address, String aadhar, String email, String password)
     {
         try {
-            url = "http://192.168.1.100/ecurrency/register.php";
+            url = "http://192.168.1.101/ecurrency/register.php";
             httpClient = new DefaultHttpClient();
             httpPost = new HttpPost(url);
             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
@@ -66,7 +66,7 @@ public class ApiConnector {
     public String checkLogin(String phone, String password)
     {
         try {
-            url = "http://192.168.1.100/ecurrency/login.php";
+            url = "http://192.168.1.101/ecurrency/login.php";
             httpClient = new DefaultHttpClient();
             httpPost = new HttpPost(url);
             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
@@ -94,7 +94,7 @@ public class ApiConnector {
     {
         JSONObject resultJson = new JSONObject();
         try {
-            url = "http://192.168.1.100/ecurrency/checkPhoneNum.php";
+            url = "http://192.168.1.101/ecurrency/checkPhoneNum.php";
             httpClient = new DefaultHttpClient();
             httpPost = new HttpPost(url);
             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(3);
@@ -118,7 +118,7 @@ public class ApiConnector {
     public String processTrans(String receiver_id, String amount, String phone)
     {
         try {
-            url = "http://192.168.1.100/ecurrency/ProcessTransaction.php";
+            url = "http://192.168.1.101/ecurrency/ProcessTransaction.php";
             httpClient = new DefaultHttpClient();
             httpPost = new HttpPost(url);
             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
@@ -147,7 +147,7 @@ public class ApiConnector {
     {
         JSONArray resultJson = new JSONArray();
         try {
-            url = "http://192.168.1.100/ecurrency/ReceiveMoney.php";
+            url = "http://192.168.1.101/ecurrency/ReceiveMoney.php";
             httpClient = new DefaultHttpClient();
             httpPost = new HttpPost(url);
             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(0);
@@ -171,32 +171,33 @@ public class ApiConnector {
 
     }
 
-    public JSONArray getReport(String email, String test_ID)
+    public String acceptAmount(String t_id, String code)
     {
-        JSONArray resultJson = new JSONArray();
         try {
-            url = "http://adaptivetest.tk/aesmob/report1.php";
+            url = "http://192.168.1.101/ecurrency/AcceptAmount.php";
             httpClient = new DefaultHttpClient();
             httpPost = new HttpPost(url);
-            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(0);
+            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
 
-            nameValuePairs.add(new BasicNameValuePair("Email_ID" , email));
-            nameValuePairs.add(new BasicNameValuePair("Test_ID" , test_ID));
+            nameValuePairs.add(new BasicNameValuePair("t_id" , t_id));
+            nameValuePairs.add(new BasicNameValuePair("code" , code));
 
             httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
             httpResponse = httpClient.execute(httpPost);
             responseText = EntityUtils.toString(httpResponse.getEntity());
             Log.i("response" , responseText);
-            resultJson = new JSONArray(responseText);
 
-            return resultJson;
+            JSONObject jobject = new JSONObject(responseText);
+            responseText = jobject.getString("message");
+            return responseText;
+
         }
         catch (Exception e)
         {
             e.printStackTrace();
         }
 
-        return  resultJson;
+        return responseText;
 
     }
 }

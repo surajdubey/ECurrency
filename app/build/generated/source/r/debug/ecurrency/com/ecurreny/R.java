@@ -1315,16 +1315,17 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f07002e;
         public static final int action_mode_bar_stub=0x7f07002d;
         public static final int action_mode_close_button=0x7f070020;
-        public static final int action_settings=0x7f070050;
+        public static final int action_settings=0x7f070053;
         public static final int activity_chooser_view_content=0x7f070021;
         public static final int always=0x7f07000f;
         public static final int beginning=0x7f07000a;
-        public static final int btnLogin=0x7f070041;
-        public static final int btnPayment=0x7f07004d;
-        public static final int btnReceive=0x7f07004e;
-        public static final int btnRegister=0x7f070043;
-        public static final int btnSend=0x7f070045;
-        public static final int btnTrans=0x7f07004f;
+        public static final int btnLogin=0x7f070044;
+        public static final int btnPayment=0x7f070050;
+        public static final int btnReceive=0x7f070051;
+        public static final int btnRegister=0x7f070046;
+        public static final int btnSend=0x7f070048;
+        public static final int btnSubmit=0x7f070041;
+        public static final int btnTrans=0x7f070052;
         public static final int checkbox=0x7f070029;
         public static final int collapseActionView=0x7f070011;
         public static final int decor_content_parent=0x7f07002f;
@@ -1332,16 +1333,17 @@ containing a value of this type.
         public static final int dialog=0x7f070012;
         public static final int disableHome=0x7f070009;
         public static final int dropdown=0x7f070013;
-        public static final int editText=0x7f070042;
+        public static final int editText=0x7f070045;
         public static final int edit_query=0x7f070033;
         public static final int end=0x7f07000c;
-        public static final int etAadhar=0x7f070049;
-        public static final int etAddress=0x7f070048;
-        public static final int etAmount=0x7f070044;
-        public static final int etEmail=0x7f07004a;
-        public static final int etName=0x7f070047;
-        public static final int etPassword=0x7f070040;
-        public static final int etPhone=0x7f07003f;
+        public static final int etAadhar=0x7f07004c;
+        public static final int etAddress=0x7f07004b;
+        public static final int etAmount=0x7f070047;
+        public static final int etCode=0x7f070040;
+        public static final int etEmail=0x7f07004d;
+        public static final int etName=0x7f07004a;
+        public static final int etPassword=0x7f070043;
+        public static final int etPhone=0x7f070042;
         public static final int expand_activities_button=0x7f070022;
         public static final int expanded_menu=0x7f070028;
         public static final int home=0x7f070019;
@@ -1351,6 +1353,7 @@ containing a value of this type.
         public static final int image=0x7f070023;
         public static final int listMode=0x7f070001;
         public static final int list_item=0x7f070025;
+        public static final int lvReceive=0x7f070049;
         public static final int middle=0x7f07000b;
         public static final int never=0x7f07000d;
         public static final int none=0x7f070003;
@@ -1376,9 +1379,9 @@ containing a value of this type.
         public static final int submit_area=0x7f07003c;
         public static final int tabMode=0x7f070002;
         public static final int title=0x7f070027;
-        public static final int tvBalance=0x7f07004c;
-        public static final int tvInfo=0x7f070046;
-        public static final int tvName=0x7f07004b;
+        public static final int tvBalance=0x7f07004f;
+        public static final int tvInfo=0x7f07003f;
+        public static final int tvName=0x7f07004e;
         public static final int up=0x7f07001d;
         public static final int useLogo=0x7f070004;
         public static final int withText=0x7f070010;
@@ -1411,21 +1414,23 @@ containing a value of this type.
         public static final int abc_search_dropdown_item_icons_2line=0x7f030014;
         public static final int abc_search_view=0x7f030015;
         public static final int abc_simple_dropdown_hint=0x7f030016;
-        public static final int activity_main=0x7f030017;
-        public static final int activity_payment=0x7f030018;
-        public static final int activity_process_transaction=0x7f030019;
-        public static final int activity_receive=0x7f03001a;
-        public static final int activity_register=0x7f03001b;
-        public static final int activity_welcome=0x7f03001c;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001d;
+        public static final int activity_accept_money=0x7f030017;
+        public static final int activity_main=0x7f030018;
+        public static final int activity_payment=0x7f030019;
+        public static final int activity_process_transaction=0x7f03001a;
+        public static final int activity_receive=0x7f03001b;
+        public static final int activity_register=0x7f03001c;
+        public static final int activity_welcome=0x7f03001d;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
     }
     public static final class menu {
-        public static final int menu_main=0x7f0c0000;
-        public static final int menu_payment=0x7f0c0001;
-        public static final int menu_process_transaction=0x7f0c0002;
-        public static final int menu_receive=0x7f0c0003;
-        public static final int menu_register=0x7f0c0004;
-        public static final int menu_welcome=0x7f0c0005;
+        public static final int menu_accept_money=0x7f0c0000;
+        public static final int menu_main=0x7f0c0001;
+        public static final int menu_payment=0x7f0c0002;
+        public static final int menu_process_transaction=0x7f0c0003;
+        public static final int menu_receive=0x7f0c0004;
+        public static final int menu_register=0x7f0c0005;
+        public static final int menu_welcome=0x7f0c0006;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f0a0000;
@@ -1447,11 +1452,12 @@ containing a value of this type.
         public static final int action_settings=0x7f0a0010;
         public static final int app_name=0x7f0a0011;
         public static final int hello_world=0x7f0a0012;
-        public static final int title_activity_payment=0x7f0a0013;
-        public static final int title_activity_process_transaction=0x7f0a0014;
-        public static final int title_activity_receive=0x7f0a0015;
-        public static final int title_activity_register=0x7f0a0016;
-        public static final int title_activity_welcome=0x7f0a0017;
+        public static final int title_activity_accept_money=0x7f0a0013;
+        public static final int title_activity_payment=0x7f0a0014;
+        public static final int title_activity_process_transaction=0x7f0a0015;
+        public static final int title_activity_receive=0x7f0a0016;
+        public static final int title_activity_register=0x7f0a0017;
+        public static final int title_activity_welcome=0x7f0a0018;
     }
     public static final class style {
         /**  Customize your theme here. 
