@@ -115,7 +115,7 @@ public class ApiConnector {
 
     }
 
-    public String processTrans(String phone, String receiver_id, String amount)
+    public String processTrans(String receiver_id, String amount, String phone)
     {
         try {
             url = "http://192.168.1.100/ecurrency/ProcessTransaction.php";
@@ -143,16 +143,16 @@ public class ApiConnector {
 
     }
 
-    public JSONArray getTestId(String email)
+    public JSONArray getAmountList(String phone)
     {
         JSONArray resultJson = new JSONArray();
         try {
-            url = "http://adaptivetest.tk/aesmob/report.php";
+            url = "http://192.168.1.100/ecurrency/ReceiveMoney.php";
             httpClient = new DefaultHttpClient();
             httpPost = new HttpPost(url);
             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(0);
 
-            nameValuePairs.add(new BasicNameValuePair("Email_ID" , email));
+            nameValuePairs.add(new BasicNameValuePair("phone" , phone));
 
             httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
             httpResponse = httpClient.execute(httpPost);

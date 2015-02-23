@@ -58,7 +58,7 @@ public class PaymentActivity extends ActionBarActivity {
             if (result.getString("message").equals("Success")) {
                 receiver_id = result.getString("user_id");
                 AlertDialog.Builder builder1 = new AlertDialog.Builder(context);
-                builder1.setMessage("Name: "+result.getString("name")+"\nAre");
+                builder1.setMessage("Name: "+result.getString("name")+"\n ID : "+receiver_id+"\n Amount : "+amount);
                 builder1.setCancelable(true);
                 builder1.setPositiveButton("Yes",
                         new DialogInterface.OnClickListener() {

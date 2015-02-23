@@ -32,6 +32,15 @@ public class WelcomeActivity extends ActionBarActivity {
             }
         });
 
+        btnReceive.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), ReceiveActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
     }
 
 

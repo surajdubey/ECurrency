@@ -8,5 +8,6 @@
     <string name="title_activity_welcome">WelcomeActivity</string>
     <string name="title_activity_payment">PaymentActivity</string>
     <string name="title_activity_process_transaction">ProcessTransaction</string>
+    <string name="title_activity_receive">ReceiveActivity</string>
 
 </resources>
