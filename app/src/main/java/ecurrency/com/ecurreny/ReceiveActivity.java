@@ -80,7 +80,7 @@ public class ReceiveActivity extends ActionBarActivity {
                 for(int i=0;i<jsonArray.length();i++)
                 {
                     jobject = jsonArray.getJSONObject(i);
-                    items.add("Rs. "+jobject.getString("amount")+" from "+"Trans ID : "+jobject.getString("sender_id"));
+                    items.add("Rs. "+jobject.getString("amount")+" from "+jobject.getString("sender_name")+"("+jobject.getString("sender_phone")+")");
 
                 }
                 ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);

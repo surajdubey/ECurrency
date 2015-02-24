@@ -8,9 +8,12 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.json.JSONObject;
+
+import java.util.Random;
 
 
 public class ProcessTransaction extends ActionBarActivity {
@@ -19,16 +22,26 @@ public class ProcessTransaction extends ActionBarActivity {
     String amount;
     String phone;
     Context context = this;
+    String code;
+    int maxInt = 999999;
+    int minInt = 100000;
+    TextView tvCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_process_transaction);
 
+        tvCode = (TextView) findViewById(R.id.tvCode);
+
         Bundle bundle = getIntent().getExtras();
         receiver_id = bundle.getString("receiver_id");
         amount = bundle.getString("amount");
         phone = bundle.getString("phone");
+
+        Random rand = new Random();
+        int codeInt = rand.nextInt((maxInt - minInt)+1)+minInt;
+        code = String.valueOf(codeInt);
 
         new ProcessTransAsync().execute(new ApiConnector());
 
@@ -51,7 +64,8 @@ public class ProcessTransaction extends ActionBarActivity {
 
         @Override
         protected String doInBackground(ApiConnector... params) {
-            return params[0].processTrans(receiver_id,amount,phone);
+
+            return params[0].processTrans(receiver_id,amount,phone, code);
 
         }
 
@@ -67,7 +81,7 @@ public class ProcessTransaction extends ActionBarActivity {
         if(result.equals("Success"))
         {
             Toast.makeText(context, "Success", Toast.LENGTH_LONG).show();
-
+            tvCode.setText("Code for transaction is "+code);
         }
         else
         {

@@ -17,9 +17,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Suraj on 15-01-2015.
- */
+
 public class ApiConnector {
     String result = "";
     HttpClient httpClient;
@@ -31,7 +29,7 @@ public class ApiConnector {
     public String registerUser(String name, String phone, String address, String aadhar, String email, String password)
     {
         try {
-            url = "http://192.168.1.101/ecurrency/register.php";
+            url = Utility.BASE_URL+"register.php";
             httpClient = new DefaultHttpClient();
             httpPost = new HttpPost(url);
             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
@@ -66,10 +64,10 @@ public class ApiConnector {
     public String checkLogin(String phone, String password)
     {
         try {
-            url = "http://192.168.1.101/ecurrency/login.php";
+            url = Utility.BASE_URL+"login.php";
             httpClient = new DefaultHttpClient();
             httpPost = new HttpPost(url);
-            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
 
             nameValuePairs.add(new BasicNameValuePair("phone" , phone));
             nameValuePairs.add(new BasicNameValuePair("password" , password));
@@ -94,10 +92,10 @@ public class ApiConnector {
     {
         JSONObject resultJson = new JSONObject();
         try {
-            url = "http://192.168.1.101/ecurrency/checkPhoneNum.php";
+            url = Utility.BASE_URL+"checkPhoneNum.php";
             httpClient = new DefaultHttpClient();
             httpPost = new HttpPost(url);
-            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(3);
+            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
 
             nameValuePairs.add(new BasicNameValuePair("phone" , phone));
             httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
@@ -115,10 +113,10 @@ public class ApiConnector {
 
     }
 
-    public String processTrans(String receiver_id, String amount, String phone)
+    public String processTrans(String receiver_id, String amount, String phone, String code)
     {
         try {
-            url = "http://192.168.1.101/ecurrency/ProcessTransaction.php";
+            url = Utility.BASE_URL+"ProcessTransaction.php";
             httpClient = new DefaultHttpClient();
             httpPost = new HttpPost(url);
             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
@@ -126,6 +124,7 @@ public class ApiConnector {
             nameValuePairs.add(new BasicNameValuePair("phone" , phone));
             nameValuePairs.add(new BasicNameValuePair("receiver_id" , receiver_id));
             nameValuePairs.add(new BasicNameValuePair("amount" , amount));
+            nameValuePairs.add(new BasicNameValuePair("code" , code));
             httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
             httpResponse = httpClient.execute(httpPost);
             responseText = EntityUtils.toString(httpResponse.getEntity());
@@ -147,10 +146,10 @@ public class ApiConnector {
     {
         JSONArray resultJson = new JSONArray();
         try {
-            url = "http://192.168.1.101/ecurrency/ReceiveMoney.php";
+            url = Utility.BASE_URL+"ReceiveMoney.php";
             httpClient = new DefaultHttpClient();
             httpPost = new HttpPost(url);
-            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(0);
+            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
 
             nameValuePairs.add(new BasicNameValuePair("phone" , phone));
 
@@ -174,7 +173,7 @@ public class ApiConnector {
     public String acceptAmount(String t_id, String code)
     {
         try {
-            url = "http://192.168.1.101/ecurrency/AcceptAmount.php";
+            url = Utility.BASE_URL+"AcceptAmount.php";
             httpClient = new DefaultHttpClient();
             httpPost = new HttpPost(url);
             List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
@@ -198,6 +197,34 @@ public class ApiConnector {
         }
 
         return responseText;
+
+    }
+
+    public JSONObject getUserDetails(String phone)
+    {
+        JSONObject resultJson = new JSONObject();
+        try {
+            url = Utility.BASE_URL+"GetUserDetails.php";
+            httpClient = new DefaultHttpClient();
+            httpPost = new HttpPost(url);
+            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
+
+            nameValuePairs.add(new BasicNameValuePair("phone" , phone));
+            httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+            httpResponse = httpClient.execute(httpPost);
+            responseText = EntityUtils.toString(httpResponse.getEntity());
+
+            Log.i("response" , responseText);
+
+            resultJson = new JSONObject(responseText);
+            return resultJson;
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+        return  resultJson;
 
     }
 }
