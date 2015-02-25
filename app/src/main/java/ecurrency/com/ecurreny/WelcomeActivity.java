@@ -28,6 +28,7 @@ public class WelcomeActivity extends ActionBarActivity {
     Context context = this;
 
     String phone;
+    String userBalance;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +50,7 @@ public class WelcomeActivity extends ActionBarActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), PaymentActivity.class);
+                intent.putExtra("userBalance", userBalance);
                 startActivity(intent);
             }
         });
@@ -78,7 +80,8 @@ public class WelcomeActivity extends ActionBarActivity {
         try {
             if (result.getString("message").equals("Success")) {
                 tvName.setText("Hello "+result.getString("name"));
-                tvBalance.setText("Your cuurent balance is "+result.getString("balance"));
+                userBalance = result.getString("balance");
+                tvBalance.setText("Current balance : Rs "+userBalance);
             } else {
                 Toast.makeText(context, result.toString(), Toast.LENGTH_LONG).show();
             }

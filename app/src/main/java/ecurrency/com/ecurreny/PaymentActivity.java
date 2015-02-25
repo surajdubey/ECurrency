@@ -27,6 +27,7 @@ public class PaymentActivity extends ActionBarActivity {
     String amount;
     String receiver_id;
     String senderPhone;
+    String userBalance;
 
     Context context = this;
 
@@ -39,6 +40,8 @@ public class PaymentActivity extends ActionBarActivity {
         etAmount = (EditText) findViewById(R.id.etAmount);
         btnSend = (Button) findViewById(R.id.btnSend);
 
+        userBalance = getIntent().getExtras().getString("userBalance");
+
         senderPhone = getSharedPreferences("ECurrency", Context.MODE_PRIVATE).getString("phone","0");
 
         btnSend.setOnClickListener(new View.OnClickListener() {
@@ -50,6 +53,11 @@ public class PaymentActivity extends ActionBarActivity {
                 if(senderPhone.equals(phone))
                 {
                     Toast.makeText(context, "Sender and receiver's number can't be same.", Toast.LENGTH_SHORT).show();
+                }
+                else
+                if(Integer.parseInt(userBalance)< Integer.parseInt(amount))
+                {
+                    Toast.makeText(context, "Sorry, you don't have enough balance to perform this transaction.", Toast.LENGTH_SHORT).show();
                 }
                 else
                 {
@@ -65,8 +73,9 @@ public class PaymentActivity extends ActionBarActivity {
             if (result.getString("message").equals("Success")) {
                 receiver_id = result.getString("user_id");
                 AlertDialog.Builder builder1 = new AlertDialog.Builder(context);
-                builder1.setMessage("Name: "+result.getString("name")+"\n ID : "+receiver_id+"\n Amount : "+amount);
+                builder1.setMessage("Name: "+result.getString("name")+"\n Amount : "+amount+"\n Phone : "+phone);
                 builder1.setCancelable(true);
+                builder1.setTitle("Please confirm..");
                 builder1.setPositiveButton("Yes",
                         new DialogInterface.OnClickListener() {
                     public void onClick (DialogInterface dialog,int id){
