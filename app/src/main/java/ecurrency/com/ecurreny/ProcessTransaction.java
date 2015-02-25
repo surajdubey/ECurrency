@@ -37,8 +37,9 @@ public class ProcessTransaction extends ActionBarActivity {
         Bundle bundle = getIntent().getExtras();
         receiver_id = bundle.getString("receiver_id");
         amount = bundle.getString("amount");
-        phone = bundle.getString("phone");
+        //phone = bundle.getString("phone");
 
+        phone = getSharedPreferences("ECurrency", Context.MODE_PRIVATE).getString("phone", "0");
         Random rand = new Random();
         int codeInt = rand.nextInt((maxInt - minInt)+1)+minInt;
         code = String.valueOf(codeInt);

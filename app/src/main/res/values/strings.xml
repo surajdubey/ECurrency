@@ -10,5 +10,6 @@
     <string name="title_activity_process_transaction">ProcessTransaction</string>
     <string name="title_activity_receive">ReceiveActivity</string>
     <string name="title_activity_accept_money">AcceptMoneyActivity</string>
+    <string name="title_activity_transaction_list">TransactionListActivity</string>
 
 </resources>

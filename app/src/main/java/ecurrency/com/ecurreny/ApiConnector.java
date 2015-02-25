@@ -227,4 +227,32 @@ public class ApiConnector {
         return  resultJson;
 
     }
+
+    public JSONArray getTransactionList(String phone)
+    {
+        JSONArray resultJson = new JSONArray();
+        try {
+            url = Utility.BASE_URL+"GetTransactionList.php";
+            httpClient = new DefaultHttpClient();
+            httpPost = new HttpPost(url);
+            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
+
+            nameValuePairs.add(new BasicNameValuePair("phone" , phone));
+
+            httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+            httpResponse = httpClient.execute(httpPost);
+            responseText = EntityUtils.toString(httpResponse.getEntity());
+            Log.i("response" , responseText);
+            resultJson = new JSONArray(responseText);
+
+            return resultJson;
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+
+        return  resultJson;
+
+    }
 }

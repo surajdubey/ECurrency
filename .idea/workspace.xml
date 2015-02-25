@@ -39,36 +39,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ProcessTransaction.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/ProcessTransaction.java">
+      <file leaf-file-name="RegisterActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/RegisterActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.34768212" vertical-offset="660" max-vertical-offset="1680">
-              <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1077" max-vertical-offset="1815">
+              <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="106" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_process_transaction.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_process_transaction.xml">
+      <file leaf-file-name="PaymentActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/PaymentActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.769231" vertical-offset="0" max-vertical-offset="300">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.32490975" vertical-offset="360" max-vertical-offset="2055">
+              <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_welcome.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="6.8076925" vertical-offset="447" max-vertical-offset="975">
+              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
           <provider editor-type-id="android-designer">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Utility.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/Utility.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-              <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -610,7 +610,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
@@ -618,24 +617,27 @@
         <option value="$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/MainActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/RegisterActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_payment.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/PaymentActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_receive.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_accept_money.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/AcceptMoneyActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/Utility.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/WelcomeActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/ReceiveActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/ApiConnector.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_process_transaction.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/ProcessTransaction.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_process_transaction.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/Utility.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/ApiConnector.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/ReceiveActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/TransactionListActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/WelcomeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_transaction_list.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/PaymentActivity.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="63" />
-    <option name="y" value="24" />
+    <option name="y" value="-4" />
     <option name="width" value="1217" />
-    <option name="height" value="696" />
+    <option name="height" value="724" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -663,9 +665,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -758,6 +757,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -938,8 +940,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="63" y="24" width="1217" height="696" extended-state="6" />
-    <editor active="true" />
+    <frame x="63" y="-4" width="1217" height="724" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -954,7 +956,7 @@
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31325302" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43373495" sideWeight="0.49957448" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.49957448" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -962,7 +964,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20170213" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08089501" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36144578" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -982,7 +984,7 @@
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20170213" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20170213" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.08089501" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
@@ -996,7 +998,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31325302" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6643718" sideWeight="0.49957448" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12564544" sideWeight="0.49957448" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1023,30 +1025,10 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/ReceiveActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1890">
-          <caret line="75" column="76" selection-start-line="75" selection-start-column="76" selection-end-line="75" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_receive.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="405">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/ApiConnector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2985" max-vertical-offset="3105">
           <caret line="199" column="0" selection-start-line="199" selection-start-column="0" selection-end-line="199" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1062,7 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1440">
           <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1077,7 +1058,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2310" max-vertical-offset="3105">
           <caret line="154" column="69" selection-start-line="154" selection-start-column="69" selection-end-line="154" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1085,7 +1065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1440">
           <caret line="46" column="75" selection-start-line="46" selection-start-column="75" selection-end-line="46" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1107,7 +1086,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2310" max-vertical-offset="3105">
           <caret line="154" column="69" selection-start-line="154" selection-start-column="69" selection-end-line="154" selection-end-column="69" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,7 +1124,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1800" max-vertical-offset="3105">
           <caret line="120" column="68" selection-start-line="120" selection-start-column="68" selection-end-line="120" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1323,18 +1300,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/PaymentActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47619048" vertical-offset="750" max-vertical-offset="2280">
-          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_accept_money.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.307693" vertical-offset="63" max-vertical-offset="735">
           <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -1345,34 +1314,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.230769" vertical-offset="0" max-vertical-offset="405">
           <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/RegisterActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.6337209" vertical-offset="267" max-vertical-offset="1815">
-          <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="106" selection-end-column="5" />
+        <state vertical-scroll-proportion="2.8311257" vertical-offset="495" max-vertical-offset="2175">
+          <caret line="90" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/AcceptMoneyActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.5294118" vertical-offset="0" max-vertical-offset="1830">
+        <state vertical-scroll-proportion="0.0" vertical-offset="194" max-vertical-offset="1575">
           <caret line="108" column="41" selection-start-line="108" selection-start-column="41" selection-end-line="108" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_process_transaction.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32967034" vertical-offset="0" max-vertical-offset="455">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/ProcessTransaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.34303534" vertical-offset="585" max-vertical-offset="1665">
+          <caret line="41" column="96" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/ApiConnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.4115524" vertical-offset="0" max-vertical-offset="3735">
+          <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
           <folding>
-            <marker date="1424717869334" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <element signature="e#3585#3600#0" expanded="false" />
+            <element signature="e#4426#4441#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/WelcomeActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3846154" vertical-offset="10" max-vertical-offset="960">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2025">
+          <caret line="0" column="31" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+          <folding>
+            <element signature="e#1900#2142#0" expanded="true" />
+            <element signature="e#2131#2132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_transaction_list.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39772728" vertical-offset="0" max-vertical-offset="528">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -1380,28 +1384,15 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/WelcomeActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_welcome.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.25672877" vertical-offset="941" max-vertical-offset="2100">
-          <caret line="71" column="58" selection-start-line="71" selection-start-column="58" selection-end-line="71" selection-end-column="58" />
+        <state vertical-scroll-proportion="6.8076925" vertical-offset="447" max-vertical-offset="975">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/ReceiveActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2220">
-          <caret line="74" column="0" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/ApiConnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1423" max-vertical-offset="3315">
-          <caret line="126" column="67" selection-start-line="126" selection-start-column="67" selection-end-line="126" selection-end-column="67" />
-          <folding />
-        </state>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/Utility.java">
@@ -1412,29 +1403,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/TransactionListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.8311257" vertical-offset="495" max-vertical-offset="2175">
-          <caret line="90" column="0" selection-start-line="70" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1484" max-vertical-offset="2220">
+          <caret line="82" column="65" selection-start-line="82" selection-start-column="65" selection-end-line="82" selection-end-column="65" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_process_transaction.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/ReceiveActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.769231" vertical-offset="0" max-vertical-offset="300">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        <state vertical-scroll-proportion="2.8558226" vertical-offset="135" max-vertical-offset="2220">
+          <caret line="140" column="4" selection-start-line="140" selection-start-column="4" selection-end-line="146" selection-end-column="5" />
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/RegisterActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1077" max-vertical-offset="1815">
+          <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="106" selection-end-column="5" />
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/ProcessTransaction.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/ecurrency/com/ecurreny/PaymentActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34768212" vertical-offset="660" max-vertical-offset="1680">
-          <caret line="62" column="9" selection-start-line="62" selection-start-column="9" selection-end-line="62" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.32490975" vertical-offset="360" max-vertical-offset="2055">
+          <caret line="53" column="16" selection-start-line="53" selection-start-column="16" selection-end-line="53" selection-end-column="16" />
           <folding />
         </state>
       </provider>

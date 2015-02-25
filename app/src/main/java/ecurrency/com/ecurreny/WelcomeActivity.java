@@ -62,6 +62,14 @@ public class WelcomeActivity extends ActionBarActivity {
             }
         });
 
+        btnTrans.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(context, TransactionListActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 
@@ -108,7 +116,13 @@ public class WelcomeActivity extends ActionBarActivity {
         }
     }
 
+    @Override
+    protected void onRestart() {
+        super.onRestart();
 
+        finish();
+        startActivity(getIntent());
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

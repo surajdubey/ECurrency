@@ -1315,17 +1315,17 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f07002e;
         public static final int action_mode_bar_stub=0x7f07002d;
         public static final int action_mode_close_button=0x7f070020;
-        public static final int action_settings=0x7f070054;
+        public static final int action_settings=0x7f070055;
         public static final int activity_chooser_view_content=0x7f070021;
         public static final int always=0x7f07000f;
         public static final int beginning=0x7f07000a;
         public static final int btnLogin=0x7f070044;
-        public static final int btnPayment=0x7f070051;
-        public static final int btnReceive=0x7f070052;
+        public static final int btnPayment=0x7f070052;
+        public static final int btnReceive=0x7f070053;
         public static final int btnRegister=0x7f070046;
         public static final int btnSend=0x7f070048;
         public static final int btnSubmit=0x7f070041;
-        public static final int btnTrans=0x7f070053;
+        public static final int btnTrans=0x7f070054;
         public static final int checkbox=0x7f070029;
         public static final int collapseActionView=0x7f070011;
         public static final int decor_content_parent=0x7f07002f;
@@ -1354,6 +1354,7 @@ containing a value of this type.
         public static final int listMode=0x7f070001;
         public static final int list_item=0x7f070025;
         public static final int lvReceive=0x7f07004a;
+        public static final int lvTransactionList=0x7f07004f;
         public static final int middle=0x7f07000b;
         public static final int never=0x7f07000d;
         public static final int none=0x7f070003;
@@ -1379,10 +1380,10 @@ containing a value of this type.
         public static final int submit_area=0x7f07003c;
         public static final int tabMode=0x7f070002;
         public static final int title=0x7f070027;
-        public static final int tvBalance=0x7f070050;
+        public static final int tvBalance=0x7f070051;
         public static final int tvCode=0x7f070049;
         public static final int tvInfo=0x7f07003f;
-        public static final int tvName=0x7f07004f;
+        public static final int tvName=0x7f070050;
         public static final int up=0x7f07001d;
         public static final int useLogo=0x7f070004;
         public static final int withText=0x7f070010;
@@ -1421,8 +1422,9 @@ containing a value of this type.
         public static final int activity_process_transaction=0x7f03001a;
         public static final int activity_receive=0x7f03001b;
         public static final int activity_register=0x7f03001c;
-        public static final int activity_welcome=0x7f03001d;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
+        public static final int activity_transaction_list=0x7f03001d;
+        public static final int activity_welcome=0x7f03001e;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
     }
     public static final class menu {
         public static final int menu_accept_money=0x7f0c0000;
@@ -1431,7 +1433,8 @@ containing a value of this type.
         public static final int menu_process_transaction=0x7f0c0003;
         public static final int menu_receive=0x7f0c0004;
         public static final int menu_register=0x7f0c0005;
-        public static final int menu_welcome=0x7f0c0006;
+        public static final int menu_transaction_list=0x7f0c0006;
+        public static final int menu_welcome=0x7f0c0007;
     }
     public static final class string {
         public static final int abc_action_bar_home_description=0x7f0a0000;
@@ -1458,7 +1461,8 @@ containing a value of this type.
         public static final int title_activity_process_transaction=0x7f0a0015;
         public static final int title_activity_receive=0x7f0a0016;
         public static final int title_activity_register=0x7f0a0017;
-        public static final int title_activity_welcome=0x7f0a0018;
+        public static final int title_activity_transaction_list=0x7f0a0018;
+        public static final int title_activity_welcome=0x7f0a0019;
     }
     public static final class style {
         /**  Customize your theme here. 

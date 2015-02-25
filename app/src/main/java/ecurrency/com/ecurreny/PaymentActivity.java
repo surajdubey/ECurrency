@@ -26,6 +26,7 @@ public class PaymentActivity extends ActionBarActivity {
     String phone;
     String amount;
     String receiver_id;
+    String senderPhone;
 
     Context context = this;
 
@@ -38,7 +39,7 @@ public class PaymentActivity extends ActionBarActivity {
         etAmount = (EditText) findViewById(R.id.etAmount);
         btnSend = (Button) findViewById(R.id.btnSend);
 
-        phone = getSharedPreferences("ECurrency", Context.MODE_PRIVATE).getString("phone","0");
+        senderPhone = getSharedPreferences("ECurrency", Context.MODE_PRIVATE).getString("phone","0");
 
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,8 +47,14 @@ public class PaymentActivity extends ActionBarActivity {
                 phone = etPhone.getText().toString();
                 amount = etAmount.getText().toString();
 
-                new CheckPhoneAsync().execute(new ApiConnector());
-
+                if(senderPhone.equals(phone))
+                {
+                    Toast.makeText(context, "Sender and receiver's number can't be same.", Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+                    new CheckPhoneAsync().execute(new ApiConnector());
+                }
             }
         });
     }
@@ -67,7 +74,7 @@ public class PaymentActivity extends ActionBarActivity {
                         Intent intent = new Intent(getApplicationContext(), ProcessTransaction.class);
                         intent.putExtra("receiver_id", receiver_id);
                         intent.putExtra("amount", amount);
-                        intent.putExtra("phone", phone);
+                        //intent.putExtra("phone", phone);
 
                         startActivity(intent);
 

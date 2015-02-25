@@ -4,18 +4,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="ecurrency.com.ecurreny.ProcessTransaction">
+    tools:context="ecurrency.com.ecurreny.TransactionListActivity">
 
-    <TextView
-        android:id="@+id/tvCode"
-        android:text="Please Wait.."
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:textStyle="bold"
-        android:textSize="48sp"
-        android:gravity="center"
-        />
+    <ListView
+        android:id="@+id/lvTransactionList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
 
 </RelativeLayout>
+<!-- From: file:/home/suraj/AndroidStudioProjects/ECurreny/app/src/main/res/layout/activity_transaction_list.xml -->

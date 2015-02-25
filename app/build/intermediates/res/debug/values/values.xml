@@ -169,6 +169,7 @@
     <string name="title_activity_process_transaction">ProcessTransaction</string>
     <string name="title_activity_receive">ReceiveActivity</string>
     <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_transaction_list">TransactionListActivity</string>
     <string name="title_activity_welcome">WelcomeActivity</string>
     <!-- From: file:/home/suraj/AndroidStudioProjects/ECurreny/app/src/main/res/values/styles.xml -->
     <eat-comment/>

@@ -16,6 +16,7 @@
         android:textAlignment="center"
         android:gravity="center"
         />
+
     <TextView
         android:id="@+id/tvBalance"
         android:layout_width="match_parent"

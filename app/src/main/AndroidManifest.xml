@@ -45,6 +45,10 @@
             android:name=".AcceptMoneyActivity"
             android:label="@string/title_activity_accept_money" >
         </activity>
+        <activity
+            android:name=".TransactionListActivity"
+            android:label="@string/title_activity_transaction_list" >
+        </activity>
     </application>
 
 </manifest>
