@@ -24,6 +24,9 @@ public class AcceptMoneyActivity extends ActionBarActivity {
     Button btnSubmit;
     String code;
     String t_id;
+    String receiver_phone;
+    String amount;
+    String name;
     Context context = this;
 
     @Override
@@ -35,7 +38,14 @@ public class AcceptMoneyActivity extends ActionBarActivity {
         etCode = (EditText) findViewById(R.id.etCode);
         btnSubmit = (Button) findViewById(R.id.btnSubmit);
 
+
         t_id = getIntent().getExtras().getString("t_id");
+        amount = getIntent().getExtras().getString("amount");
+        receiver_phone = getIntent().getExtras().getString("receiver_phone");
+        name = getIntent().getExtras().getString("name");
+
+        tvInfo.setText(" Amount : "+amount+"\n Sender's Phone : "+receiver_phone+"\n Name : "+name);
+
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override

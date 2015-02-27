@@ -37,7 +37,9 @@
         android:id="@+id/btnSubmit"
         android:layout_below="@+id/etCode"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="30dp"
+
+        />
 
 
 </RelativeLayout>

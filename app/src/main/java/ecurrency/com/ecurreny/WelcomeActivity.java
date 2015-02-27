@@ -3,6 +3,7 @@ package ecurrency.com.ecurreny;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -21,6 +22,7 @@ public class WelcomeActivity extends ActionBarActivity {
     Button btnPayment;
     Button btnReceive;
     Button btnTrans;
+    Button btnLogout;
 
     TextView tvName;
     TextView tvBalance;
@@ -38,6 +40,7 @@ public class WelcomeActivity extends ActionBarActivity {
         btnPayment = (Button) findViewById(R.id.btnPayment);
         btnReceive = (Button) findViewById(R.id.btnReceive);
         btnTrans = (Button) findViewById(R.id.btnTrans);
+        btnLogout = (Button) findViewById(R.id.btnLogout);
 
         tvName = (TextView) findViewById(R.id.tvName);
         tvBalance = (TextView) findViewById(R.id.tvBalance);
@@ -72,6 +75,24 @@ public class WelcomeActivity extends ActionBarActivity {
             }
         });
 
+        btnLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                signout();
+            }
+        });
+
+    }
+
+    public void signout()
+    {
+        Intent intent = new Intent(context, MainActivity.class);
+
+        SharedPreferences.Editor editor = getSharedPreferences("ECurrency", Context.MODE_PRIVATE).edit();
+        editor.clear().commit();
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+        finish();
     }
 
 

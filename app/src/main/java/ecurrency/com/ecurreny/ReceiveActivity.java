@@ -76,11 +76,17 @@ public class ReceiveActivity extends ActionBarActivity {
         else {
             try
             {
+                String amount = "";
+                String sender_name = "";
+                String sender_phone = "";
                 items = new ArrayList<String>();
                 for(int i=0;i<jsonArray.length();i++)
                 {
                     jobject = jsonArray.getJSONObject(i);
-                    items.add("Rs. "+jobject.getString("amount")+" from "+jobject.getString("sender_name")+"("+jobject.getString("sender_phone")+")");
+                    amount = jobject.getString("amount");
+                    sender_name = jobject.getString("sender_name");
+                    sender_phone = jobject.getString("sender_phone");
+                    items.add("Rs. "+amount+" from "+sender_name+"("+sender_phone+")");
 
                 }
                 ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, items);
@@ -93,6 +99,11 @@ public class ReceiveActivity extends ActionBarActivity {
 
                             Intent intent = new Intent(getApplicationContext(), AcceptMoneyActivity.class);
                             intent.putExtra("t_id", jsonArray.getJSONObject(position).getString("t_id"));
+                            intent.putExtra("sender_name", jsonArray.getJSONObject(position).getString("sender_name"));
+                            intent.putExtra("sender_phone", jsonArray.getJSONObject(position).getString("sender_phone"));
+                            intent.putExtra("amount", jsonArray.getJSONObject(position).getString("amount"));
+
+
                             startActivity(intent);
                         }
                         catch(Exception e)

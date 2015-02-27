@@ -71,6 +71,7 @@ public class PaymentActivity extends ActionBarActivity {
     {
         try {
             if (result.getString("message").equals("Success")) {
+                String name = result.getString("name");
                 receiver_id = result.getString("user_id");
                 AlertDialog.Builder builder1 = new AlertDialog.Builder(context);
                 builder1.setMessage("Name: "+result.getString("name")+"\n Amount : "+amount+"\n Phone : "+phone);
@@ -83,6 +84,8 @@ public class PaymentActivity extends ActionBarActivity {
                         Intent intent = new Intent(getApplicationContext(), ProcessTransaction.class);
                         intent.putExtra("receiver_id", receiver_id);
                         intent.putExtra("amount", amount);
+                        //intent.putExtra("name", name);
+                        //intent.putExtra("receiver_phone", phone);
                         //intent.putExtra("phone", phone);
 
                         startActivity(intent);

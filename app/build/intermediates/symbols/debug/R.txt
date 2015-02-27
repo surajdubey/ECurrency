@@ -347,11 +347,12 @@ int id action_menu_presenter 0x7f070018
 int id action_mode_bar 0x7f07002e
 int id action_mode_bar_stub 0x7f07002d
 int id action_mode_close_button 0x7f070020
-int id action_settings 0x7f070055
+int id action_settings 0x7f070056
 int id activity_chooser_view_content 0x7f070021
 int id always 0x7f07000f
 int id beginning 0x7f07000a
 int id btnLogin 0x7f070044
+int id btnLogout 0x7f070055
 int id btnPayment 0x7f070052
 int id btnReceive 0x7f070053
 int id btnRegister 0x7f070046
