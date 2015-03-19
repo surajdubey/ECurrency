@@ -19,6 +19,7 @@ public class RegisterActivity extends ActionBarActivity {
 
     EditText etName, etPhone, etAddress, etAadhar, etEmail, etPassword;
     Button btnRegister;
+    Button btnAadharScan;
 
     String name;
     String phone;
@@ -43,6 +44,7 @@ public class RegisterActivity extends ActionBarActivity {
         etEmail = (EditText) findViewById(R.id.etEmail);
         etPassword = (EditText) findViewById(R.id.etPassword);
         btnRegister = (Button) findViewById(R.id.btnRegister);
+        btnAadharScan = (Button) findViewById(R.id.btnAadharScan);
 
         sharedPreferences = getSharedPreferences("ECurrency", Context.MODE_PRIVATE);
 
@@ -56,6 +58,13 @@ public class RegisterActivity extends ActionBarActivity {
                 email = etEmail.getText().toString();
                 password = etPassword.getText().toString();
                 new RegisterAsync().execute(new ApiConnector());
+            }
+        });
+
+        btnAadharScan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
             }
         });
     }

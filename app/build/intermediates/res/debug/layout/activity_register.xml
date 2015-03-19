@@ -41,11 +41,10 @@
         />
 
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:id="@+id/etAadhar"
         android:layout_below="@+id/etAddress"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:hint="Aadhar Number"
         android:gravity="center"
@@ -86,6 +85,15 @@
         android:layout_marginTop="45dp"
         android:gravity="center"
         />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan"
+        android:id="@+id/btnAadharScan"
+        android:layout_alignTop="@+id/etAadhar"
+        android:layout_alignRight="@+id/etEmail"
+        android:layout_alignEnd="@+id/etEmail" />
 
 </RelativeLayout>
 <!-- From: file:/home/suraj/AndroidStudioProjects/ECurreny/app/src/main/res/layout/activity_register.xml -->
